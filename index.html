@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/231e7db441.js" crossorigin="anonymous"></script>
     <title>Tea House Practice</title>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                orange: '#D22C34',
-                dark01: '#1C1C1C',
-                dark02: '#494949',
-                dark03: '#777777',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        redish: '#D22C34',
+                        dark01: '#1C1C1C',
+                        dark02: '#494949',
+                        dark03: '#777777',
+                        dark04: '#A4A4A4',
+                    },
+                    fontFamily: {
+                    manrope: ['Manrope', 'sans-serif'],
+                    },
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
-<body>
-    <header>
 
+<body class="font-manrope">
+    <header>
+        <!-- banner section -->
+        <section class="container py-10 mx-auto md:flex justify-between">
+            <div>
+                <h1 class="font-extrabold text-8xl leading-tight text-dark01">It's good <br> tea time at The <br> Tea House</h1>
+                <p class="font-medium text-lg text-dark03 my-7">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+                <button class="font-bold text-white rounded-lg text-xl py-5 px-8 bg-gradient-to-r from-orange-400 via-orange-600 to-red-600">Explore More</button>
+            </div>
+            <div class="relative">
+                <img class="max-w-2xl w-full" src="images/banner.png" alt="">
+                <div class="flex items-center bg-white gap-2 shadow-lg p-5 rounded w-72 absolute bottom-5 left-12">
+                    <img src="images/star.png" alt="">
+                    <div class="">
+                        <p class="text-3xl font-bold">5.00</p>
+                        <p>Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
